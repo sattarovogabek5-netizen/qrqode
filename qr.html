@@ -57,6 +57,16 @@
             border-radius: 15px;
             overflow: hidden;
             border: 3px solid #667eea;
+            position: relative;
+        }
+
+        #reader video {
+            border-radius: 12px;
+        }
+
+        /* Skaner ramkasi */
+        #reader__scan_region {
+            border-radius: 15px !important;
         }
 
         .result-container {
@@ -197,7 +207,9 @@
                 { 
                     fps: 10,
                     qrbox: { width: 250, height: 250 },
-                    aspectRatio: 1.0
+                    aspectRatio: 1.0,
+                    facingMode: "environment", // Orqa kamera
+                    rememberLastUsedCamera: false
                 }
             );
 
